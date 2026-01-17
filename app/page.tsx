@@ -3,11 +3,27 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-void-black px-4">
-        {/* Gradient Background */}
-        <div className="absolute inset-0 bg-space-fade opacity-80" />
+        {/* ✅ Video Background (NEW) */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        >
+          {/* Put your video in /public/videos/space.mp4 */}
+          <source src="Futuristic_African_Child_Astronaut_Video.mp4" type="video/mp4" />
+        </video>
 
-        {/* Stars Background */}
-        <div className="absolute inset-0">
+        {/* ✅ Soft dark overlay so text stays readable (NEW) */}
+        <div className="absolute inset-0 bg-black/40 z-10" />
+
+        {/* Gradient Background (kept) */}
+        <div className="absolute inset-0 bg-space-fade opacity-80 z-10" />
+
+        {/* Stars Background (kept) */}
+        <div className="absolute inset-0 z-10">
           {[...Array(20)].map((_, i) => (
             <div
               key={i}
@@ -21,13 +37,13 @@ export default function HomePage() {
           ))}
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 text-center w-full max-w-5xl mx-auto py-20">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-protoverse-white mb-4 sm:mb-6 text-glow-cyan animate-fade-in">
+        {/* Content (kept) */}
+        <div className="relative z-20 text-center w-full max-w-5xl mx-auto py-20">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-protoverse-white mb-4 sm:mb-6 text-glow-cyan animate-fade-in font-logo">
             Protoverse Labs
           </h1>
 
-          <p className="text-xl sm:text-2xl md:text-4xl text-quantum-cyan font-semibold mb-3 sm:mb-4 animate-fade-in-up">
+          <p className="text-xl sm:text-2xl md:text-4xl text-quantum-cyan font-semibold mb-3 sm:mb-4 animate-fade-in-up font-logo">
             Innovation Without Limits
           </p>
 
@@ -67,7 +83,7 @@ export default function HomePage() {
           <div className="mt-8 sm:mt-12 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
             <a
               href="/sky-academy"
-              className="inline-block bg-nebula-blue hover:bg-quantum-cyan text-protoverse-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-quantum-cyan/50 text-sm sm:text-base"
+              className="inline-block bg-nebula-blue hover:bg-quantum-cyan text-protoverse-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-quantum-cyan/50 text-sm sm:text-base font-logo"
             >
               Explore Our Universe
             </a>
@@ -75,13 +91,12 @@ export default function HomePage() {
         </div>
 
         {/* Scroll Indicator - Hidden on mobile */}
-        <div className="hidden sm:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
+        <div className="hidden sm:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float z-20">
           <div className="w-6 h-10 border-2 border-quantum-cyan rounded-full flex items-start justify-center p-2">
             <div className="w-1 h-3 bg-quantum-cyan rounded-full animate-float" />
           </div>
         </div>
       </section>
-
       {/* About Preview Section */}
       <section className="py-20 px-4 bg-protoverse-white">
         <div className="max-w-6xl mx-auto">
