@@ -26,8 +26,8 @@
     --radius: 0.5rem;
     
     /* Font variables */
-    --font-body: 'orbitron', system-ui, sans-serif;
-    --font-logo: 'Orbitron', 'Arial', sans-serif;
+    --font-body: 'montserrat', system-ui, sans-serif;
+    --font-logo: 'orbitron', 'Arial', sans-serif;
     --font-montserrat: 'Montserrat', sans-serif;
   }
 

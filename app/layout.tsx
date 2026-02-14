@@ -3,6 +3,7 @@ import { Inter, Roboto, Space_Grotesk, Space_Mono,Orbitron,Montserrat } from "ne
 import "@/styles/globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { space } from "postcss/lib/list";
 
 
 
@@ -14,6 +15,11 @@ const orbitron = Orbitron({
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: '--font-montserrat',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: '--font-logo',
 });
 
 export const metadata: Metadata = {
@@ -29,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${montserrat.variable} ${orbitron.variable}  antialiased`}>
+      <body className={` ${montserrat.variable} ${orbitron.variable} ${spaceGrotesk.variable}  antialiased`}>
         <Navbar />
         <div className="pt-16">
           {children}

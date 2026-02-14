@@ -10,6 +10,7 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: ['react-icons', 'framer-motion'],
+    disableOptimizedLoading: false,
   },
 }
 
