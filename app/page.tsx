@@ -1,21 +1,22 @@
+import AlternatingVideoBackground from '@/components/AlternatingVideoBackground';
+
 export default function HomePage() {
   return (
     <>
-      {/* Full Page Video Background - Fixed to viewport */}
-      <video
-        className="fixed inset-0 w-full h-full object-cover z-0"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-      >
-        <source src="/Futuristic_African_Child_Astronaut_Video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      {/* Dark overlay for readability - Fixed to viewport */}
-      <div className="fixed inset-0 bg-black/50 z-10" />
+      {/* Alternating Video Background with custom videos for home page */}
+      <AlternatingVideoBackground 
+        videos={[
+          '/Futuristic_African_Child_Astronaut_Video.mp4',
+          '/bg2.mp4',
+          '/video3.mp4',
+          '/video4.mp4',
+          '/video5.mp4',
+          '/video6.mp4',
+          '/video7.mp4',
+          '/video homepage.mp4',
+        ]}
+        interval={5000} // Switch every 30 seconds
+      />
 
       {/* All content sits above the video */}
       <div className="relative z-20">

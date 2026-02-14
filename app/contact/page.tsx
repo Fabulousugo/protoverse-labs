@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import AlternatingVideoBackground from '@/components/AlternatingVideoBackground';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -18,21 +19,8 @@ export default function ContactPage() {
 
   return (
     <>
-      {/* Full Page Video Background - Fixed to viewport */}
-      <video
-        className="fixed inset-0 w-full h-full object-cover z-0"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-      >
-        <source src="/Futuristic_African_Child_Astronaut_Video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      {/* Dark overlay for readability - Fixed to viewport */}
-      <div className="fixed inset-0 bg-black/60 z-10" />
+      {/* Alternating Video Background */}
+      <AlternatingVideoBackground />
 
       {/* All content sits above the video */}
       <main className="min-h-screen relative z-20">
@@ -81,7 +69,7 @@ export default function ContactPage() {
 
                 <div>
                   <label className="block text-sm font-semibold text-protoverse-white mb-2">Subject</label>
-                  <select
+                  <select title='protoverse'
                     className="w-full px-4 py-3 bg-protoverse-white/10 border-2 border-quantum-cyan/30 rounded-lg focus:border-quantum-cyan focus:outline-none transition-colors text-protoverse-white"
                     value={formData.subject}
                     onChange={(e) => setFormData({...formData, subject: e.target.value})}
