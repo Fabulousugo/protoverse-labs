@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import AlternatingVideoBackground from '@/components/AlternatingVideoBackground';
 
 export default function SkyAcademyPage() {
   const [activeTab, setActiveTab] = useState('kids');
@@ -59,17 +60,19 @@ export default function SkyAcademyPage() {
   return (
     <>
       {/* Full Page Video Background - Fixed to viewport */}
-      <video
-        className="fixed inset-0 w-full h-full object-cover z-0"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-      >
-        <source src="/Futuristic_African_Child_Astronaut_Video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <AlternatingVideoBackground 
+                    videos={[
+                      '/Futuristic_African_Child_Astronaut_Video.mp4',
+                      '/bg2.mp4',
+                      '/video3.mp4',
+                      '/video4.mp4',
+                      '/video5.mp4',
+                      '/video6.mp4',
+                      '/video7.mp4',
+                      '/video homepage.mp4',
+                    ]}
+                    interval={5000} // Switch every 30 seconds
+                  />
 
       {/* Dark overlay for readability - Fixed to viewport */}
       <div className="fixed inset-0 bg-black/60 z-10" />

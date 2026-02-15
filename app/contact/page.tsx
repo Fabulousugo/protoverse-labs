@@ -20,7 +20,19 @@ export default function ContactPage() {
   return (
     <>
       {/* Alternating Video Background */}
-      <AlternatingVideoBackground />
+      <AlternatingVideoBackground 
+                    videos={[
+                      '/Futuristic_African_Child_Astronaut_Video.mp4',
+                      '/bg2.mp4',
+                      '/video3.mp4',
+                      '/video4.mp4',
+                      '/video5.mp4',
+                      '/video6.mp4',
+                      '/video7.mp4',
+                      '/video homepage.mp4',
+                    ]}
+                    interval={5000} // Switch every 30 seconds
+                  />
 
       {/* All content sits above the video */}
       <main className="min-h-screen relative z-20">

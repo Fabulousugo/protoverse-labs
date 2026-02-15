@@ -1,42 +1,41 @@
+import AlternatingVideoBackground from "@/components/AlternatingVideoBackground";
+
 export default function AboutPage() {
   const team = [
-    { name: 'Dr. Amara Okafor', role: 'Founder & CEO', image: '👩‍🚀' },
-    { name: 'Kwame Mensah', role: 'Chief Technology Officer', image: '👨‍💻' },
-    { name: 'Zainab Ibrahim', role: 'Head of Education', image: '👩‍🏫' },
-    { name: 'Chidi Nwosu', role: 'Lead Aerospace Engineer', image: '👨‍🔬' },
+    { name: 'Brown Ejike', role: 'Co-Founder & CEO', image: '👩‍🚀' },
+    { name: 'Sultan Kamal Abdulazeez', role: 'COO/Co-founder ', image: '👩‍🚀' },
+    { name: 'Ugo Onah', role: 'Head of Platform Engineering', image: '👨‍💻' },
   ];
 
   const values = [
     { icon: '🎯', title: 'Innovation First', description: 'Pushing boundaries in space and AI education' },
-    { icon: '🌍', title: 'African Excellence', description: 'Celebrating and amplifying African talent' },
+    { icon: '🌍', title: 'African Excellence', description: 'Celebrating and amplifying African talents' },
     { icon: '🤝', title: 'Inclusive Access', description: 'Making STEM education accessible to all' },
     { icon: '🚀', title: 'Future-Focused', description: 'Preparing the next generation of innovators' },
   ];
 
   const milestones = [
-    { year: '2022', event: 'Protoverse Labs Founded' },
-    { year: '2023', event: 'Launched Sky Academy with 500+ students' },
-    { year: '2024', event: 'First CubeSat program launched' },
-    { year: '2025', event: 'AfroSpace Adventurers series in production' },
+    { year: '2021', event: 'Child, Teen to Adult Academy' },
+    { year: '2023', event: 'Launched Bootcamps with over 500+ students' },
+    { year: '2025', event: 'Morphed into Protoverse Labs with focus on Space Tech and AI' },
+    { year: '2025', event: 'AfroSpace Adventurers Series in Production' },
   ];
 
   return (
     <>
-      {/* Full Page Video Background - Fixed to viewport */}
-      <video
-        className="fixed inset-0 w-full h-full object-cover z-0"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-      >
-        <source src="/Futuristic_African_Child_Astronaut_Video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      {/* Dark overlay for readability - Fixed to viewport */}
-      <div className="fixed inset-0 bg-black/60 z-10" />
+      <AlternatingVideoBackground 
+        videos={[
+          '/Futuristic_African_Child_Astronaut_Video.mp4',
+          '/bg2.mp4',
+          '/video3.mp4',
+          '/video4.mp4',
+          '/video5.mp4',
+          '/video6.mp4',
+          '/video7.mp4',
+          '/video homepage.mp4',
+        ]}
+        interval={5000}
+      />
 
       {/* All content sits above the video */}
       <main className="min-h-screen relative z-20">
@@ -60,9 +59,7 @@ export default function AboutPage() {
                 <div className="text-5xl mb-4">🎯</div>
                 <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
                 <p className="text-lg leading-relaxed text-protoverse-white/90">
-                  To democratize access to world-class space science and AI education across Africa, 
-                  inspiring and equipping the next generation of innovators, scientists, and entrepreneurs 
-                  to solve Africa's challenges and contribute to global advancement.
+                  To democratize space and AI education in Africa through scalable, inclusive, world-class learning programs.
                 </p>
               </div>
 
@@ -70,9 +67,7 @@ export default function AboutPage() {
                 <div className="text-5xl mb-4">🔭</div>
                 <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
                 <p className="text-lg leading-relaxed text-protoverse-white/90">
-                  To establish Protoverse Labs as Africa's leading innovation hub for space technology 
-                  and artificial intelligence, creating a thriving ecosystem where African youth can dream, 
-                  learn, and build the technologies that will shape humanity's future in space.
+                  To become Africa's leading hub for space and artificial intelligence education, research, and innovation.
                 </p>
               </div>
             </div>
@@ -85,22 +80,13 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold mb-8 text-center text-quantum-cyan">Our Story</h2>
             <div className="glass-effect p-8 rounded-2xl">
               <p className="text-lg leading-relaxed mb-6 text-protoverse-white/90">
-                Protoverse Labs was born from a simple yet powerful idea: every African child deserves 
-                the opportunity to reach for the stars. Founded in 2022 by a team of passionate educators, 
-                engineers, and innovators, we set out to bridge the gap between Africa's brilliant young 
-                minds and the cutting-edge fields of space science and artificial intelligence.
+                Protoverse Labs was born from a simple yet powerful idea: Every African child deserves the opportunity to reach for the stars. Founded in 2025 by a team of passionate educators, engineers, and innovators, we set out to bridge the gap between Africa's brilliant young minds and the cutting-edge fields of space science and artificial intelligence.
               </p>
               <p className="text-lg leading-relaxed mb-6 text-protoverse-white/90">
-                We recognized that traditional education systems often lacked the resources and curriculum 
-                to inspire students about space exploration and emerging technologies. So we created 
-                Protoverse Labs—a place where imagination meets innovation, where African stories are told 
-                through the lens of space adventure, and where hands-on learning transforms curiosity into capability.
+                We recognize that traditional education systems often lacked the resources and curriculum to inspire students about space exploration and emerging technologies. So we created Protoverse Labs – innovation without limits, where African stories are told through the lens of space adventure, and hands-on learning transforms curiosity into capability.
               </p>
               <p className="text-lg leading-relaxed text-protoverse-white/90">
-                Today, we're proud to serve thousands of students across Africa through our Sky Academy 
-                programs, AfroSpace Adventurers series, and community outreach initiatives. But we're 
-                just getting started. The future of space exploration will be written by diverse voices 
-                from every corner of the globe—and Africa's voice will be heard loud and clear.
+                Today, we're proud to serve thousands across Africa through our Sky Academy Programs, AfroSpace Series, and community outreach initiatives. But we're just getting started because the future of space exploration will be written by diverse voices from every corner of the globe.
               </p>
             </div>
           </div>
@@ -144,11 +130,11 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Team */}
+        {/* Team - CENTERED FOR 3 ITEMS */}
         <section className="py-20 px-4 bg-black/40 backdrop-blur-sm">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold mb-12 text-center text-protoverse-white">Our Team</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {team.map((member, index) => (
                 <div key={index} className="text-center group">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-nebula-blue to-quantum-cyan flex items-center justify-center text-6xl shadow-lg shadow-quantum-cyan/30 group-hover:scale-110 transition-transform">
