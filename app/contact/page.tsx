@@ -31,7 +31,7 @@ export default function ContactPage() {
                       '/video7.mp4',
                       '/video homepage.mp4',
                     ]}
-                    interval={5000} // Switch every 30 seconds
+                    interval={5000} 
                   />
 
       {/* All content sits above the video */}
@@ -141,7 +141,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-protoverse-white mb-1">Email</h3>
                     <p className="text-protoverse-white/80">info@protoverselabs.com</p>
-                    <p className="text-protoverse-white/80">partnerships@protoverselabs.com</p>
+                    <p className="text-protoverse-white/80">protoverselabs@gmail.com</p>
                   </div>
                 </div>
 
@@ -151,8 +151,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-protoverse-white mb-1">Phone</h3>
-                    <p className="text-protoverse-white/80">+234 800 SPACE AI</p>
-                    <p className="text-protoverse-white/80">+234 123 456 7890</p>
+                    <p className="text-protoverse-white/80">+234 7069301777</p>
+                    <p className="text-protoverse-white/80">+234 818 605 3836</p>
                   </div>
                 </div>
 

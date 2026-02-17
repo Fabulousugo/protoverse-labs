@@ -2,34 +2,39 @@ import AlternatingVideoBackground from "@/components/AlternatingVideoBackground"
 
 export default function AfroSpacePage() {
   const characters = [
-    { name: 'Amara', role: 'Captain & Pilot', trait: 'Brave & Strategic', icon: '👩‍🚀', color: 'from-nebula-blue to-quantum-cyan' },
-    { name: 'Kwame', role: 'AI Specialist', trait: 'Genius Coder', icon: '👨‍💻', color: 'from-stellar-purple to-nebula-blue' },
-    { name: 'Zara', role: 'Scientist', trait: 'Curious & Brilliant', icon: '👩‍🔬', color: 'from-quantum-cyan to-hologram-teal' },
-    { name: 'Tunde', role: 'Engineer', trait: 'Creative Problem-Solver', icon: '👨‍🔧', color: 'from-solar-gold to-stellar-purple' },
+    { name: 'Lindiwe', role: 'Fearless Leader & Primary Pilot', trait: 'of the Ubuntu Skyrunner', icon: '👩‍🚀', color: 'from-nebula-blue to-quantum-cyan' },
+    { name: 'Ezenwa', role: 'Software Engineer', trait: '& AI Prodigy', icon: '👨‍💻', color: 'from-stellar-purple to-nebula-blue' },
+    { name: 'Ayo', role: 'Robotics & Mechanical', trait: 'Engineering Prodigy', icon: '🤖', color: 'from-quantum-cyan to-nebula-blue' },
+    { name: 'Zainab', role: 'Navigator', trait: '& Celestial Cartographer', icon: '🧭', color: 'from-nebula-blue to-stellar-purple' },
+    { name: 'Boma', role: 'Bio & Hydro', trait: 'Systems Specialist', icon: '🌿', color: 'from-quantum-cyan to-stellar-purple' },
+    { name: 'Zawadi', role: 'Linguist', trait: '& Communication Specialist', icon: '🗣️', color: 'from-stellar-purple to-quantum-cyan' },
+    { name: 'Tariq', role: 'Archaeology, History', trait: '& Cosmic Mythology Expert', icon: '🏺', color: 'from-nebula-blue to-quantum-cyan' },
+    { name: 'Oríkì', role: 'X AI – Holographic', trait: 'AI Guide', icon: '✨', color: 'from-quantum-cyan to-nebula-blue', isAI: true },
   ];
 
   const episodes = [
-    { title: 'The Cosmic Awakening', description: 'The team discovers an ancient signal from deep space', season: 1, episode: 1 },
-    { title: 'AI Uprising', description: 'They must outsmart a rogue AI threatening Earth', season: 1, episode: 2 },
-    { title: 'The Nebula Mystery', description: 'A mysterious nebula holds secrets to the universe', season: 1, episode: 3 },
+    { title: 'THE CALL TO THE SKY', description: 'The adventure begins as our young crew receives an extraordinary signal from beyond the stars.', season: 1, episode: 1 },
+    { title: 'ORÍKÌ-X AWAKES', description: 'The crew\'s holographic AI guide, Oríkì-X, activates and reveals the true scope of their mission.', season: 1, episode: 2 },
+    { title: 'MOON SHADOWS & MAASAI NAVIGATION', description: 'Ancient Maasai star-reading wisdom helps the crew navigate through mysterious lunar shadows.', season: 1, episode: 3 },
+    { title: 'THE SOLAR SYSTEM DRUMBEAT', description: 'The crew discovers a cosmic rhythm connecting African drumming traditions to the movements of the planets.', season: 1, episode: 4 },
   ];
 
   return (
     <>
       {/* Full Page Video Background - Fixed to viewport */}
       <AlternatingVideoBackground 
-                    videos={[
-                      '/Futuristic_African_Child_Astronaut_Video.mp4',
-                      '/bg2.mp4',
-                      '/video3.mp4',
-                      '/video4.mp4',
-                      '/video5.mp4',
-                      '/video6.mp4',
-                      '/video7.mp4',
-                      '/video homepage.mp4',
-                    ]}
-                    interval={5000} // Switch every 5 seconds
-                  />
+        videos={[
+          '/Futuristic_African_Child_Astronaut_Video.mp4',
+          '/bg2.mp4',
+          '/video3.mp4',
+          '/video4.mp4',
+          '/video5.mp4',
+          '/video6.mp4',
+          '/video7.mp4',
+          '/video homepage.mp4',
+        ]}
+        interval={5000}
+      />
 
       {/* Dark overlay for readability - Fixed to viewport */}
       <div className="fixed inset-0 bg-black/60 z-10" />
@@ -78,19 +83,42 @@ export default function AfroSpacePage() {
         {/* Meet the Crew */}
         <section className="py-20 px-4 bg-black/40 backdrop-blur-sm">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-4 text-center text-protoverse-white">Meet the Crew</h2>
-            <p className="text-center text-protoverse-white/80 mb-12 max-w-2xl mx-auto">
-              Four brilliant young Africans on a mission to explore the universe and protect Earth
-            </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {characters.map((char, index) => (
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-protoverse-white mb-4 text-glow-cyan">
+                Meet the Crew
+              </h2>
+              <p className="text-xl text-protoverse-white/80 max-w-2xl mx-auto">
+                Seven brilliant young Africans on a mission to explore the universe and protect Earth
+              </p>
+            </div>
+
+            {/* First row — 4 members */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+              {characters.slice(0, 4).map((char, index) => (
                 <div key={index} className="text-center group">
-                  <div className={`w-40 h-40 mx-auto mb-4 rounded-full bg-gradient-to-br ${char.color} flex items-center justify-center text-7xl transform group-hover:scale-110 transition-transform shadow-lg shadow-quantum-cyan/30`}>
+                  <div className={`w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full bg-gradient-to-br ${char.color} flex items-center justify-center text-5xl md:text-6xl transform group-hover:scale-110 transition-transform shadow-lg shadow-quantum-cyan/30`}>
                     {char.icon}
                   </div>
-                  <h3 className="text-2xl font-bold text-protoverse-white mb-1">{char.name}</h3>
-                  <p className="text-sm text-quantum-cyan font-semibold mb-2">{char.role}</p>
-                  <p className="text-protoverse-white/70">{char.trait}</p>
+                  <h3 className="text-lg md:text-xl font-bold text-protoverse-white mb-1">{char.name}</h3>
+                  <p className="text-xs md:text-sm text-quantum-cyan font-semibold leading-tight">{char.role}</p>
+                  <p className="text-xs text-protoverse-white/60 mt-1">{char.trait}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Second row — 4 members (last one is AI) */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {characters.slice(4).map((char, index) => (
+                <div key={index} className="text-center group">
+                  <div className={`w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full bg-gradient-to-br ${char.color} flex items-center justify-center text-5xl md:text-6xl transform group-hover:scale-110 transition-transform shadow-lg shadow-quantum-cyan/30 ${char.isAI ? 'ring-2 ring-quantum-cyan ring-offset-2 ring-offset-transparent' : ''}`}>
+                    {char.icon}
+                  </div>
+                  <h3 className="text-lg md:text-xl font-bold text-protoverse-white mb-1">{char.name}</h3>
+                  {char.isAI && (
+                    <span className="inline-block bg-quantum-cyan/20 text-quantum-cyan text-xs px-2 py-0.5 rounded-full mb-1 border border-quantum-cyan/40">AI</span>
+                  )}
+                  <p className="text-xs md:text-sm text-quantum-cyan font-semibold leading-tight">{char.role}</p>
+                  <p className="text-xs text-protoverse-white/60 mt-1">{char.trait}</p>
                 </div>
               ))}
             </div>
@@ -103,14 +131,20 @@ export default function AfroSpacePage() {
             <h2 className="text-4xl font-bold mb-12 text-center text-quantum-cyan">Season 1 Episodes</h2>
             <div className="space-y-6">
               {episodes.map((ep, index) => (
-                <div key={index} className="glass-effect p-6 rounded-xl hover:neon-border-cyan transition-all">
+                <div key={index} className="glass-effect p-6 rounded-xl hover:neon-border-cyan transition-all group">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                    <div>
-                      <p className="text-sm text-quantum-cyan mb-1">S{ep.season} E{ep.episode}</p>
-                      <h3 className="text-2xl font-bold mb-2">{ep.title}</h3>
-                      <p className="text-protoverse-white/70">{ep.description}</p>
+                    <div className="flex items-start gap-4">
+                      {/* Episode number badge */}
+                      <div className="flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-quantum-cyan to-nebula-blue flex items-center justify-center shadow-lg shadow-quantum-cyan/30">
+                        <span className="text-xs font-bold text-center leading-tight">S{ep.season}<br/>E{ep.episode}</span>
+                      </div>
+                      <div>
+                        <p className="text-xs text-quantum-cyan mb-1 font-semibold tracking-widest">SEASON {ep.season} · EPISODE {ep.episode}</p>
+                        <h3 className="text-xl md:text-2xl font-bold mb-2 group-hover:text-quantum-cyan transition-colors">{ep.title}</h3>
+                        <p className="text-protoverse-white/70 text-sm">{ep.description}</p>
+                      </div>
                     </div>
-                    <button className="bg-quantum-cyan text-void-black px-6 py-2 rounded-lg font-semibold hover:bg-protoverse-white hover:scale-105 transition-all">
+                    <button className="flex-shrink-0 bg-quantum-cyan text-void-black px-6 py-2 rounded-lg font-semibold hover:bg-protoverse-white hover:scale-105 transition-all">
                       Preview
                     </button>
                   </div>

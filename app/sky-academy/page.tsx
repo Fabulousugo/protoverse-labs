@@ -57,25 +57,33 @@ export default function SkyAcademyPage() {
     ],
   };
 
+  const crew = [
+    { name: 'Lindiwe', role: 'Fearless Leader & Primary Pilot', ship: 'of the Ubuntu Skyrunner', icon: '👩‍🚀', color: 'from-nebula-blue to-quantum-cyan' },
+    { name: 'Ezenwa', role: 'Software Engineer', ship: '& AI Prodigy', icon: '👨‍💻', color: 'from-stellar-purple to-nebula-blue' },
+    { name: 'Ayo', role: 'Robotics & Mechanical', ship: 'Engineering Prodigy', icon: '🤖', color: 'from-quantum-cyan to-nebula-blue' },
+    { name: 'Zainab', role: 'Navigator', ship: '& Celestial Cartographer', icon: '🧭', color: 'from-nebula-blue to-stellar-purple' },
+    { name: 'Boma', role: 'Bio & Hydro', ship: 'Systems Specialist', icon: '🌿', color: 'from-quantum-cyan to-stellar-purple' },
+    { name: 'Zawadi', role: 'Linguist', ship: '& Communication Specialist', icon: '🗣️', color: 'from-stellar-purple to-quantum-cyan' },
+    { name: 'Tariq', role: 'Archaeology, History', ship: '& Cosmic Mythology Expert', icon: '🏺', color: 'from-nebula-blue to-quantum-cyan' },
+    { name: 'Oríkì', role: 'X AI – Holographic', ship: 'AI Guide', icon: '✨', color: 'from-quantum-cyan to-nebula-blue', isAI: true },
+  ];
+
   return (
     <>
       {/* Full Page Video Background - Fixed to viewport */}
       <AlternatingVideoBackground 
-                    videos={[
-                      '/Futuristic_African_Child_Astronaut_Video.mp4',
-                      '/bg2.mp4',
-                      '/video3.mp4',
-                      '/video4.mp4',
-                      '/video5.mp4',
-                      '/video6.mp4',
-                      '/video7.mp4',
-                      '/video homepage.mp4',
-                    ]}
-                    interval={5000} // Switch every 30 seconds
-                  />
-
-      {/* Dark overlay for readability - Fixed to viewport */}
-      <div className="fixed inset-0 bg-black/60 z-10" />
+        videos={[
+          '/Futuristic_African_Child_Astronaut_Video.mp4',
+          '/bg2.mp4',
+          '/video3.mp4',
+          '/video4.mp4',
+          '/video5.mp4',
+          '/video6.mp4',
+          '/video7.mp4',
+          '/video homepage.mp4',
+        ]}
+        interval={5000}
+      />
 
       {/* All content sits above the video */}
       <main className="min-h-screen relative z-20">
@@ -210,7 +218,7 @@ export default function SkyAcademyPage() {
                   program: 'AI Learning'
                 },
                 {
-                  name: 'Mrs. Adeyemi',
+                  name: 'Mrs Rita',
                   age: null,
                   quote: 'Protoverse transformed our school\'s STEM program. Our students are more engaged than ever!',
                   program: 'School Partnership'
@@ -233,6 +241,7 @@ export default function SkyAcademyPage() {
           </div>
         </section>
 
+       
         {/* CTA */}
         <section className="py-20 px-4 bg-gradient-to-r from-stellar-purple/50 to-nebula-blue/50 backdrop-blur-sm text-protoverse-white">
           <div className="max-w-4xl mx-auto text-center">
