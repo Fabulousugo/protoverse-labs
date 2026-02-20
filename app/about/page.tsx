@@ -18,22 +18,31 @@ export default function AboutPage() {
     { year: '2021', event: 'Child, Teen to Adult Academy' },
     { year: '2023', event: 'Launched Bootcamps with over 500+ students' },
     { year: '2025', event: 'Morphed into Protoverse Labs with focus on Space Tech and AI' },
-    { year: '2025', event: 'AfroSpace Adventurers Series in Production' },
-    { year: '2026', event: 'Afrospace Adventures' },
+    { year: '2025', event: 'Ubuntu Skyrunners Post-production' },
+    { year: '2026', event: 'School Collaborations & Space-themed events' },
   ];
 
   return (
     <>
       <AlternatingVideoBackground 
         videos={[
-          // '/video6.mp4',
-          // '/video7.mp4',
-          '/video homepage.mp4',
+          '/video10.mp4',
+          '/video11.mp4',
+          '/video12.mp4',
+          '/video13.mp4',
+          '/video14.mp4',
+          '/video15.mp4',
+          '/video16.mp4',         
+          '/video_homepage.mp4',
           '/Futuristic_African_Child_Astronaut_Video.mp4',
           '/bg2.mp4',
           '/video3.mp4',
           '/video4.mp4',
           '/video5.mp4',
+          '/video6.mp4',
+          '/video8.mp4',
+          '/video9.mp4',
+
         ]}
         interval={5000}
       />

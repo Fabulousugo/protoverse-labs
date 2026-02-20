@@ -49,7 +49,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <button
+          <button title='mobile-buttons'
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-protoverse-white"
           >

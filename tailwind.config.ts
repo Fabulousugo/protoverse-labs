@@ -21,6 +21,12 @@ const config: Config = {
         'solar-gold': '#F2C94C',
         'orbit-gray': '#B7BCC6',
         
+        // Logo VERSE gradient colors (extracted from logo_no_bg.png)
+        'verse-cyan': '#6ACCD9',      // Brightest cyan (gradient start)
+        'verse-blue': '#4AB5C9',       // Medium cyan-blue (primary accent)
+        'verse-steel': '#2474AF',      // Steel blue (mid tone)
+        'verse-navy': '#1056AB',       // Deep navy (gradient end)
+        
         // Semantic colors for shadcn compatibility
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -60,10 +66,12 @@ const config: Config = {
         'horizon-gradient': 'linear-gradient(to right, #5DF0DE, #0047BA)',
         'aurora-gradient': 'linear-gradient(135deg, #0FF2E3, #6C63FF, #0047BA)',
         'space-fade': 'linear-gradient(to bottom, #000000, #0D1B3E, #0047BA)',
+        'verse-gradient': 'linear-gradient(to right, #6ACCD9, #4AB5C9, #2474AF, #1056AB)', // Logo VERSE gradient
       },
       fontFamily: {
         'heading': ['var(--font-heading)', 'Arial', 'sans-serif'],
         'body': ['var(--font-body)', 'Arial', 'sans-serif'],
+        'logo': ['var(--font-logo)', 'Inter', 'system-ui', 'sans-serif'], // Added for logo text styling
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
