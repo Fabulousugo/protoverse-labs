@@ -10,7 +10,7 @@ export default function Navbar() {
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/sky-academy', label: 'Sky Academy' },
-    { href: '/afrospace', label: 'AfroSpace' },
+    { href: '/afroseries', label: 'AfroSeries' },
     { href: '/programs', label: 'Programs' },
     { href: '/skymart', label: 'SkyMart' },
     { href: '/contact', label: 'Contact' },

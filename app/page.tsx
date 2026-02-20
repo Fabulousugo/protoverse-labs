@@ -40,7 +40,7 @@ export default function HomePage() {
           {/* Content */}
           <div className="relative z-10 text-center w-full max-w-5xl mx-auto py-20">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-protoverse-white mb-4 sm:mb-6 text-glow-cyan animate-fade-in font-logo">
-              Protoverse Labs
+              PROTOVERSE LABS
             </h1>
 
             <p className="text-xl sm:text-2xl md:text-4xl text-quantum-cyan font-semibold mb-3 sm:mb-4 animate-fade-in-up font-logo">
@@ -194,7 +194,7 @@ export default function HomePage() {
         <section className="py-20 px-4 bg-gradient-to-r from-stellar-purple/40 to-nebula-blue/40 backdrop-blur-sm">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-protoverse-white mb-4">
-              🎬 AfroSpace Adventurers Coming Soon!
+              🎬 Ubuntu Skyrunners Coming Soon!
             </h2>
             <p className="text-xl text-protoverse-white/90 mb-8">Africa's first space-AI animated series for kids</p>
             <div className="glass-effect p-8 rounded-2xl inline-block">

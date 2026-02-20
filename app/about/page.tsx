@@ -19,6 +19,7 @@ export default function AboutPage() {
     { year: '2023', event: 'Launched Bootcamps with over 500+ students' },
     { year: '2025', event: 'Morphed into Protoverse Labs with focus on Space Tech and AI' },
     { year: '2025', event: 'AfroSpace Adventurers Series in Production' },
+    { year: '2026', event: 'Afrospace Adventures' },
   ];
 
   return (
