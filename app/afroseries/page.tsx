@@ -29,56 +29,56 @@ export default function AfroSpacePage() {
       name: "Lindiwe",
       role: "Fearless Leader & Primary Pilot",
       trait: "of the Ubuntu Skyrunner",
-      image: "/characters/Lindiwe Suited.png",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Lindiwe%20Suited.png",
       color: "from-nebula-blue to-quantum-cyan",
     },
     {
       name: "Ezenwa",
       role: "Software Engineer",
       trait: "& AI Prodigy",
-      image: "/characters/Ezenwa Suited.png",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Ezenwa%20Suited.png",
       color: "from-stellar-purple to-nebula-blue",
     },
     {
       name: "Ayo",
       role: "Robotics & Mechanical",
       trait: "Engineering Prodigy",
-      image: "/characters/Ayo Suited.png",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Ayo%20Suited.png",
       color: "from-quantum-cyan to-nebula-blue",
     },
     {
       name: "Zainab",
       role: "Navigator",
       trait: "& Celestial Cartographer",
-      image: "/characters/Zainab Suited.png",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Zainab.png",
       color: "from-nebula-blue to-stellar-purple",
     },
     {
       name: "Boma",
       role: "Bio & Hydro",
       trait: "Systems Specialist",
-      image: "/characters/Boma Suited.png",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Boma%20Suited.png",
       color: "from-quantum-cyan to-stellar-purple",
     },
     {
       name: "Zawadi",
       role: "Linguist",
       trait: "& Communication Specialist",
-      image: "/characters/Zawadi Suited.png",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Zawadi%20Suited.png",
       color: "from-stellar-purple to-quantum-cyan",
     },
     {
       name: "Tariq",
       role: "Archaeology, History",
       trait: "& Cosmic Mythology Expert",
-      image: "/characters/Tariq Suited.png",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Tariq%20Suited.png",
       color: "from-nebula-blue to-quantum-cyan",
     },
     {
       name: "Oríkì",
       role: "X AI – Holographic",
       trait: "AI Guide",
-      image: "/characters/Oriki-X.png",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Oriki-X.png",
       color: "from-quantum-cyan to-nebula-blue",
       isAI: true,
     },
@@ -138,22 +138,22 @@ export default function AfroSpacePage() {
       {/* Full Page Video Background - Fixed to viewport */}
       <AlternatingVideoBackground
         videos={[
-          "/video4.mp4",
-          "/video5.mp4",
-          "/video6.mp4",
-          "/video8.mp4",
-          "/video9.mp4",
-          "/video10.mp4",
-          "/video11.mp4",
-          "/video12.mp4",
-          "/video13.mp4",
-          "/video14.mp4",
-          "/video15.mp4",
-          "/video16.mp4",
-          "/video_homepage.mp4",
-          "/Futuristic_African_Child_Astronaut_Video.mp4",
-          "/bg2.mp4",
-          "/video3.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video4.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video5.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video6.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video8.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video9.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video10.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video11.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video12.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video13.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video14.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video15.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video16.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video_homepage.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/Futuristic_African_Child_Astronaut_Video.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/bg2.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video3.mp4",
         ]}
         interval={5000}
       />
@@ -198,6 +198,47 @@ export default function AfroSpacePage() {
               <button className="glass-effect border-2 border-protoverse-white font-bold py-4 px-10 rounded-lg hover:bg-protoverse-white hover:text-nebula-blue transition-all">
                 Coming 2025
               </button>
+            </div>
+          </div>
+        </section>
+
+        {/* Crew Intro Picture with GLOW */}
+        <section className="py-20 px-4 bg-black/30 backdrop-blur-sm">
+          <div className="max-w-6xl mx-auto">
+            {/* Outer glow container */}
+            <div className="relative p-1 rounded-2xl bg-gradient-to-r from-quantum-cyan via-verse-blue to-quantum-cyan animate-pulse">
+              {/* Glass effect container */}
+              <div className="relative rounded-2xl overflow-hidden glass-effect-strong border-2 border-quantum-cyan/50 hover:border-quantum-cyan hover:shadow-2xl hover:shadow-quantum-cyan/50 transition-all duration-500 group">
+                {/* Image container */}
+                <div className="relative h-[400px] md:h-[600px] w-full bg-gradient-to-br from-nebula-blue/30 to-stellar-purple/30 flex items-center justify-center">
+                  <img
+                    src="/characters/Ubuntu_SR.jpeg" 
+                    alt="AfroSpace Adventurers Crew"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    style={{
+                      filter: 'brightness(1.1) contrast(1.1)',
+                    }}
+                  />
+                  
+                  {/* Glow overlay effects */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30" />
+                  <div className="absolute inset-0 bg-quantum-cyan/5 mix-blend-overlay" />
+                  
+                  {/* Corner glow accents */}
+                  <div className="absolute top-0 left-0 w-32 h-32 bg-quantum-cyan/30 blur-3xl rounded-full -translate-x-1/2 -translate-y-1/2 group-hover:scale-150 transition-transform duration-700" />
+                  <div className="absolute bottom-0 right-0 w-32 h-32 bg-verse-blue/30 blur-3xl rounded-full translate-x-1/2 translate-y-1/2 group-hover:scale-150 transition-transform duration-700" />
+                  
+                  {/* Text overlay with enhanced glow */}
+                  <div className="absolute bottom-0 left-0 right-0 p-8 text-center z-10">
+                    <h3 className="text-3xl md:text-5xl font-bold text-protoverse-white mb-2 text-glow-verse drop-shadow-2xl">
+                      The Ubuntu Skyrunner Crew
+                    </h3>
+                    <p className="text-lg md:text-xl text-protoverse-white/90 drop-shadow-lg">
+                      Seven heroes, one mission: Explore the cosmos and protect Earth
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -250,7 +291,7 @@ export default function AfroSpacePage() {
                   <div
                     className={`relative w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br ${char.color} shadow-lg shadow-quantum-cyan/30 transform group-hover:scale-110 transition-transform ${
                       char.isAI
-                        ? "ring-2 ring-quantum-cyan ring-offset-2 ring-offset-transparent"
+                        ? "ring-2 ring-quantum-cyan ring-offset-2 ring-offset-transparent animate-pulse"
                         : ""
                     }`}
                   >
@@ -331,7 +372,7 @@ export default function AfroSpacePage() {
           </div>
         </section>
 
- {/* Educational Value */}
+        {/* Educational Value */}
         <section className="py-20 px-4 bg-black/40 backdrop-blur-sm">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold mb-12 text-center text-protoverse-white">What Kids Learn</h2>

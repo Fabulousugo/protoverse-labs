@@ -20,8 +20,8 @@ type Milestone = {
 
 export default function AboutPage() {
   const team: TeamMember[] = [
-    { name: "Brown Ejike", role: "Co-Founder & CEO", imageSrc: "/team/Brown_Ejike.jpg" },
-    { name: "Sultan Kamal Abdulazeez", role: "COO / Co-Founder", imageSrc: "" },
+    { name: "Brown Ejike", role: "Co-Founder & CEO", imageSrc: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/team/Brown_Ejike.jpg" },
+    { name: "Sultan Kamal Abdulazeez", role: "COO / Co-Founder", imageSrc: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/team/Kamal.jpeg" },
     { name: "Ugo Onah", role: "Head of Platform Engineering", imageSrc: "" },
   ];
 
@@ -44,22 +44,22 @@ export default function AboutPage() {
     <>
       <AlternatingVideoBackground
         videos={[
-          "/video10.mp4",
-          "/video11.mp4",
-          "/video12.mp4",
-          "/video13.mp4",
-          "/video14.mp4",
-          "/video15.mp4",
-          "/video16.mp4",
-          "/video_homepage.mp4",
-          "/Futuristic_African_Child_Astronaut_Video.mp4",
-          "/bg2.mp4",
-          "/video3.mp4",
-          "/video4.mp4",
-          "/video5.mp4",
-          "/video6.mp4",
-          "/video8.mp4",
-          "/video9.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video10.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video11.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video12.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video13.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video14.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video15.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video16.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video_homepage.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/Futuristic_African_Child_Astronaut_Video.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/bg2.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video3.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video4.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video5.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video6.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video8.mp4",
+          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video9.mp4",
         ]}
         interval={5000}
       />
