@@ -27,7 +27,7 @@ export default function AfroSpacePage() {
   const characters: Character[] = [
     {
       name: "Lindiwe",
-      role: "Fearless Leader & Primary Pilot",
+      role: "Leader & Pilot",
       trait: "of the Ubuntu Skyrunner",
       image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Lindiwe%20Suited.png",
       color: "from-nebula-blue to-quantum-cyan",
@@ -75,12 +75,12 @@ export default function AfroSpacePage() {
       color: "from-nebula-blue to-quantum-cyan",
     },
     {
-      name: "Oríkì",
-      role: "X AI – Holographic",
+      name: "Oríkì-X",
+      role: "AI – Holographic",
       trait: "AI Guide",
       image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Oriki-X.png",
       color: "from-quantum-cyan to-nebula-blue",
-      isAI: true,
+      // isAI: true,
     },
   ];
 
@@ -182,7 +182,7 @@ export default function AfroSpacePage() {
 
           <div className="max-w-6xl mx-auto text-center relative z-10">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 text-glow-cyan">
-              AfroSpace Adventurers
+              Ubuntu Skyrunners
             </h1>
             <p className="text-2xl md:text-3xl text-quantum-cyan mb-8">
               Africa&apos;s First Space-AI Animated Series

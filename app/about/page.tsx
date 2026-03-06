@@ -198,7 +198,7 @@ export default function AboutPage() {
             </div>
 
             <p className="text-center text-protoverse-white/60 mt-10 text-sm">
-              Tip: Place your images in <span className="text-protoverse-white">/public/team/</span> and reference them
+            
               like <span className="text-protoverse-white">/team/name.jpg</span>.
             </p>
           </div>
