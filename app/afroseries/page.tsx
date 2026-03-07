@@ -1,29 +1,7 @@
-import Image from "next/image";
 import AlternatingVideoBackground from "@/components/AlternatingVideoBackground";
 
-type Character = {
-  name: string;
-  role: string;
-  trait: string;
-  image: string;
-  color: string;
-  isAI?: boolean;
-};
-
-type Episode = {
-  title: string;
-  description: string;
-  season: number;
-  episode: number;
-};
-
-type LearnCategory = {
-  image: string;
-  title: string;
-  items: string[];
-};
-
 export default function AfroSpacePage() {
+<<<<<<< HEAD
   const characters: Character[] = [
     {
       name: "Lindiwe",
@@ -82,62 +60,32 @@ export default function AfroSpacePage() {
       color: "from-quantum-cyan to-nebula-blue",
       // isAI: true,
     },
+=======
+  const characters = [
+    { name: 'Lindiwe', role: 'Fearless Leader & Primary Pilot', trait: 'of the Ubuntu Skyrunner', icon: '👩‍🚀', color: 'from-nebula-blue to-quantum-cyan' },
+    { name: 'Ezenwa', role: 'Software Engineer', trait: '& AI Prodigy', icon: '👨‍💻', color: 'from-stellar-purple to-nebula-blue' },
+    { name: 'Ayo', role: 'Robotics & Mechanical', trait: 'Engineering Prodigy', icon: '🤖', color: 'from-quantum-cyan to-nebula-blue' },
+    { name: 'Zainab', role: 'Navigator', trait: '& Celestial Cartographer', icon: '🧭', color: 'from-nebula-blue to-stellar-purple' },
+    { name: 'Boma', role: 'Bio & Hydro', trait: 'Systems Specialist', icon: '🌿', color: 'from-quantum-cyan to-stellar-purple' },
+    { name: 'Zawadi', role: 'Linguist', trait: '& Communication Specialist', icon: '🗣️', color: 'from-stellar-purple to-quantum-cyan' },
+    { name: 'Tariq', role: 'Archaeology, History', trait: '& Cosmic Mythology Expert', icon: '🏺', color: 'from-nebula-blue to-quantum-cyan' },
+    { name: 'Oríkì', role: 'X AI – Holographic', trait: 'AI Guide', icon: '✨', color: 'from-quantum-cyan to-nebula-blue', isAI: true },
+>>>>>>> parent of a87e745 (updated characters)
   ];
 
-  const episodes: Episode[] = [
-    {
-      title: "THE CALL TO THE SKY",
-      description:
-        "The adventure begins as our young crew receives an extraordinary signal from beyond the stars.",
-      season: 1,
-      episode: 1,
-    },
-    {
-      title: "ORÍKÌ-X AWAKES",
-      description:
-        "The crew's holographic AI guide, Oríkì-X, activates and reveals the true scope of their mission.",
-      season: 1,
-      episode: 2,
-    },
-    {
-      title: "MOON SHADOWS & MAASAI NAVIGATION",
-      description:
-        "Ancient Maasai star-reading wisdom helps the crew navigate through mysterious lunar shadows.",
-      season: 1,
-      episode: 3,
-    },
-    {
-      title: "THE SOLAR SYSTEM DRUMBEAT",
-      description:
-        "The crew discovers a cosmic rhythm connecting African drumming traditions to the movements of the planets.",
-      season: 1,
-      episode: 4,
-    },
-  ];
-
-  const learnCategories: LearnCategory[] = [
-    {
-      image: "/learn/space-science.png",
-      title: "Space Science",
-      items: ["Astronomy", "Physics", "Spacecraft", "Planets"],
-    },
-    {
-      image: "/learn/ai-tech.png",
-      title: "AI & Technology",
-      items: ["Coding", "Robotics", "AI Basics", "Innovation"],
-    },
-    {
-      image: "/learn/african-culture.png",
-      title: "African Culture",
-      items: ["Heritage", "Languages", "Values", "Unity"],
-    },
+  const episodes = [
+    { title: 'THE CALL TO THE SKY', description: 'The adventure begins as our young crew receives an extraordinary signal from beyond the stars.', season: 1, episode: 1 },
+    { title: 'ORÍKÌ-X AWAKES', description: 'The crew\'s holographic AI guide, Oríkì-X, activates and reveals the true scope of their mission.', season: 1, episode: 2 },
+    { title: 'MOON SHADOWS & MAASAI NAVIGATION', description: 'Ancient Maasai star-reading wisdom helps the crew navigate through mysterious lunar shadows.', season: 1, episode: 3 },
+    { title: 'THE SOLAR SYSTEM DRUMBEAT', description: 'The crew discovers a cosmic rhythm connecting African drumming traditions to the movements of the planets.', season: 1, episode: 4 },
   ];
 
   return (
     <>
       {/* Full Page Video Background - Fixed to viewport */}
-      <AlternatingVideoBackground
+      <AlternatingVideoBackground 
         videos={[
+<<<<<<< HEAD
           "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video4.mp4",
           "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video5.mp4",
           "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video6.mp4",
@@ -154,6 +102,25 @@ export default function AfroSpacePage() {
           "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/Futuristic_African_Child_Astronaut_Video.mp4",
           "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/bg2.mp4",
           "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video3.mp4",
+=======
+          '/video4.mp4',
+          '/video5.mp4',
+          '/video6.mp4',
+          '/video8.mp4',
+          '/video9.mp4',
+          '/video10.mp4',
+          '/video11.mp4',
+          '/video12.mp4',
+          '/video13.mp4',
+          '/video14.mp4',
+          '/video15.mp4',
+          '/video16.mp4',         
+          '/video_homepage.mp4',
+          '/Futuristic_African_Child_Astronaut_Video.mp4',
+          '/bg2.mp4',
+          '/video3.mp4',
+
+>>>>>>> parent of a87e745 (updated characters)
         ]}
         interval={5000}
       />
@@ -165,7 +132,7 @@ export default function AfroSpacePage() {
       <main className="min-h-screen relative z-20">
         {/* Hero */}
         <section className="relative bg-gradient-to-br from-stellar-purple/40 via-nebula-blue/40 to-void-black/40 backdrop-blur-sm text-protoverse-white py-32 px-4 overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0">
             {[...Array(50)].map((_, i) => (
               <div
                 key={i}
@@ -174,7 +141,7 @@ export default function AfroSpacePage() {
                   left: `${Math.random() * 100}%`,
                   top: `${Math.random() * 100}%`,
                   animationDelay: `${Math.random() * 3}s`,
-                  opacity: Math.random(),
+                  opacity: Math.random()
                 }}
               />
             ))}
@@ -185,10 +152,10 @@ export default function AfroSpacePage() {
               Ubuntu Skyrunners
             </h1>
             <p className="text-2xl md:text-3xl text-quantum-cyan mb-8">
-              Africa&apos;s First Space-AI Animated Series
+              Africa's First Space-AI Animated Series
             </p>
             <p className="text-lg text-protoverse-white/90 max-w-3xl mx-auto mb-12">
-              Join an incredible team of African space explorers as they journey through the cosmos,
+              Join an incredible team of African space explorers as they journey through the cosmos, 
               solving mysteries with AI and inspiring the next generation of innovators!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -259,26 +226,11 @@ export default function AfroSpacePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
               {characters.slice(0, 4).map((char, index) => (
                 <div key={index} className="text-center group">
-                  <div
-                    className={`relative w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br ${char.color} shadow-lg shadow-quantum-cyan/30 transform group-hover:scale-110 transition-transform`}
-                  >
-                    <Image
-                      src={char.image}
-                      alt={`${char.name} character portrait`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 112px, 144px"
-                      priority={index < 2}
-                    />
-                    <div className="absolute inset-0 ring-2 ring-quantum-cyan/40 rounded-full pointer-events-none" />
+                  <div className={`w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full bg-gradient-to-br ${char.color} flex items-center justify-center text-5xl md:text-6xl transform group-hover:scale-110 transition-transform shadow-lg shadow-quantum-cyan/30`}>
+                    {char.icon}
                   </div>
-
-                  <h3 className="text-lg md:text-xl font-bold text-protoverse-white mb-1">
-                    {char.name}
-                  </h3>
-                  <p className="text-xs md:text-sm text-quantum-cyan font-semibold leading-tight">
-                    {char.role}
-                  </p>
+                  <h3 className="text-lg md:text-xl font-bold text-protoverse-white mb-1">{char.name}</h3>
+                  <p className="text-xs md:text-sm text-quantum-cyan font-semibold leading-tight">{char.role}</p>
                   <p className="text-xs text-protoverse-white/60 mt-1">{char.trait}</p>
                 </div>
               ))}
@@ -288,6 +240,7 @@ export default function AfroSpacePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {characters.slice(4).map((char, index) => (
                 <div key={index} className="text-center group">
+<<<<<<< HEAD
                   <div
                     className={`relative w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br ${char.color} shadow-lg shadow-quantum-cyan/30 transform group-hover:scale-110 transition-transform ${
                       char.isAI
@@ -305,21 +258,16 @@ export default function AfroSpacePage() {
                     {!char.isAI && (
                       <div className="absolute inset-0 ring-2 ring-quantum-cyan/40 rounded-full pointer-events-none" />
                     )}
+=======
+                  <div className={`w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full bg-gradient-to-br ${char.color} flex items-center justify-center text-5xl md:text-6xl transform group-hover:scale-110 transition-transform shadow-lg shadow-quantum-cyan/30 ${char.isAI ? 'ring-2 ring-quantum-cyan ring-offset-2 ring-offset-transparent' : ''}`}>
+                    {char.icon}
+>>>>>>> parent of a87e745 (updated characters)
                   </div>
-
-                  <h3 className="text-lg md:text-xl font-bold text-protoverse-white mb-1">
-                    {char.name}
-                  </h3>
-
+                  <h3 className="text-lg md:text-xl font-bold text-protoverse-white mb-1">{char.name}</h3>
                   {char.isAI && (
-                    <span className="inline-block bg-quantum-cyan/20 text-quantum-cyan text-xs px-2 py-0.5 rounded-full mb-1 border border-quantum-cyan/40">
-                      AI
-                    </span>
+                    <span className="inline-block bg-quantum-cyan/20 text-quantum-cyan text-xs px-2 py-0.5 rounded-full mb-1 border border-quantum-cyan/40">AI</span>
                   )}
-
-                  <p className="text-xs md:text-sm text-quantum-cyan font-semibold leading-tight">
-                    {char.role}
-                  </p>
+                  <p className="text-xs md:text-sm text-quantum-cyan font-semibold leading-tight">{char.role}</p>
                   <p className="text-xs text-protoverse-white/60 mt-1">{char.trait}</p>
                 </div>
               ))}
@@ -330,38 +278,22 @@ export default function AfroSpacePage() {
         {/* Episodes Preview */}
         <section className="py-20 px-4 bg-black/30 backdrop-blur-sm text-protoverse-white">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center text-quantum-cyan">
-              Season 1 Episodes
-            </h2>
-
+            <h2 className="text-4xl font-bold mb-12 text-center text-quantum-cyan">Season 1 Episodes</h2>
             <div className="space-y-6">
               {episodes.map((ep, index) => (
-                <div
-                  key={index}
-                  className="glass-effect p-6 rounded-xl hover:neon-border-cyan transition-all group"
-                >
+                <div key={index} className="glass-effect p-6 rounded-xl hover:neon-border-cyan transition-all group">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                     <div className="flex items-start gap-4">
                       {/* Episode number badge */}
                       <div className="flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-quantum-cyan to-nebula-blue flex items-center justify-center shadow-lg shadow-quantum-cyan/30">
-                        <span className="text-xs font-bold text-center leading-tight">
-                          S{ep.season}
-                          <br />
-                          E{ep.episode}
-                        </span>
+                        <span className="text-xs font-bold text-center leading-tight">S{ep.season}<br/>E{ep.episode}</span>
                       </div>
-
                       <div>
-                        <p className="text-xs text-quantum-cyan mb-1 font-semibold tracking-widest">
-                          SEASON {ep.season} · EPISODE {ep.episode}
-                        </p>
-                        <h3 className="text-xl md:text-2xl font-bold mb-2 group-hover:text-quantum-cyan transition-colors">
-                          {ep.title}
-                        </h3>
+                        <p className="text-xs text-quantum-cyan mb-1 font-semibold tracking-widest">SEASON {ep.season} · EPISODE {ep.episode}</p>
+                        <h3 className="text-xl md:text-2xl font-bold mb-2 group-hover:text-quantum-cyan transition-colors">{ep.title}</h3>
                         <p className="text-protoverse-white/70 text-sm">{ep.description}</p>
                       </div>
                     </div>
-
                     <button className="flex-shrink-0 bg-quantum-cyan text-void-black px-6 py-2 rounded-lg font-semibold hover:bg-protoverse-white hover:scale-105 transition-all">
                       Preview
                     </button>
@@ -406,7 +338,6 @@ export default function AfroSpacePage() {
             <p className="text-xl mb-8 text-protoverse-white/90">
               Be the first to know when new episodes drop. Subscribe to our newsletter!
             </p>
-
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
