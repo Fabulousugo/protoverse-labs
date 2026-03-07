@@ -1,17 +1,10 @@
 import AlternatingVideoBackground from "@/components/AlternatingVideoBackground";
 
 export default function AboutPage() {
-<<<<<<< HEAD
-  const team: TeamMember[] = [
-    { name: "Brown Ejike", role: "Co-Founder & CEO", imageSrc: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/team/Brown_Ejike.jpg" },
-    { name: "Sultan Kamal Abdulazeez", role: "COO / Co-Founder", imageSrc: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/team/Kamal.jpeg" },
-    { name: "Ugo Onah", role: "Head of Platform Engineering", imageSrc: "" },
-=======
   const team = [
     { name: 'Brown Ejike', role: 'Co-Founder & CEO', image: '👩‍🚀' },
     { name: 'Sultan Kamal Abdulazeez', role: 'COO/Co-founder ', image: '👩‍🚀' },
     { name: 'Ugo Onah', role: 'Head of Platform Engineering', image: '👨‍💻' },
->>>>>>> parent of a87e745 (updated characters)
   ];
 
   const values = [
@@ -33,24 +26,6 @@ export default function AboutPage() {
     <>
       <AlternatingVideoBackground 
         videos={[
-<<<<<<< HEAD
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video10.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video11.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video12.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video13.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video14.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video15.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video16.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video_homepage.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/Futuristic_African_Child_Astronaut_Video.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/bg2.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video3.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video4.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video5.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video6.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video8.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video9.mp4",
-=======
           '/video10.mp4',
           '/video11.mp4',
           '/video12.mp4',
@@ -68,7 +43,6 @@ export default function AboutPage() {
           '/video8.mp4',
           '/video9.mp4',
 
->>>>>>> parent of a87e745 (updated characters)
         ]}
         interval={5000}
       />
@@ -181,14 +155,6 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
-<<<<<<< HEAD
-
-            <p className="text-center text-protoverse-white/60 mt-10 text-sm">
-            
-              like <span className="text-protoverse-white">/team/name.jpg</span>.
-            </p>
-=======
->>>>>>> parent of a87e745 (updated characters)
           </div>
         </section>
 

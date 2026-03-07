@@ -1,66 +1,6 @@
 import AlternatingVideoBackground from "@/components/AlternatingVideoBackground";
 
 export default function AfroSpacePage() {
-<<<<<<< HEAD
-  const characters: Character[] = [
-    {
-      name: "Lindiwe",
-      role: "Leader & Pilot",
-      trait: "of the Ubuntu Skyrunner",
-      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Lindiwe%20Suited.png",
-      color: "from-nebula-blue to-quantum-cyan",
-    },
-    {
-      name: "Ezenwa",
-      role: "Software Engineer",
-      trait: "& AI Prodigy",
-      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Ezenwa%20Suited.png",
-      color: "from-stellar-purple to-nebula-blue",
-    },
-    {
-      name: "Ayo",
-      role: "Robotics & Mechanical",
-      trait: "Engineering Prodigy",
-      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Ayo%20Suited.png",
-      color: "from-quantum-cyan to-nebula-blue",
-    },
-    {
-      name: "Zainab",
-      role: "Navigator",
-      trait: "& Celestial Cartographer",
-      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Zainab.png",
-      color: "from-nebula-blue to-stellar-purple",
-    },
-    {
-      name: "Boma",
-      role: "Bio & Hydro",
-      trait: "Systems Specialist",
-      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Boma%20Suited.png",
-      color: "from-quantum-cyan to-stellar-purple",
-    },
-    {
-      name: "Zawadi",
-      role: "Linguist",
-      trait: "& Communication Specialist",
-      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Zawadi%20Suited.png",
-      color: "from-stellar-purple to-quantum-cyan",
-    },
-    {
-      name: "Tariq",
-      role: "Archaeology, History",
-      trait: "& Cosmic Mythology Expert",
-      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Tariq%20Suited.png",
-      color: "from-nebula-blue to-quantum-cyan",
-    },
-    {
-      name: "Oríkì-X",
-      role: "AI – Holographic",
-      trait: "AI Guide",
-      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Oriki-X.png",
-      color: "from-quantum-cyan to-nebula-blue",
-      // isAI: true,
-    },
-=======
   const characters = [
     { name: 'Lindiwe', role: 'Fearless Leader & Primary Pilot', trait: 'of the Ubuntu Skyrunner', icon: '👩‍🚀', color: 'from-nebula-blue to-quantum-cyan' },
     { name: 'Ezenwa', role: 'Software Engineer', trait: '& AI Prodigy', icon: '👨‍💻', color: 'from-stellar-purple to-nebula-blue' },
@@ -70,7 +10,6 @@ export default function AfroSpacePage() {
     { name: 'Zawadi', role: 'Linguist', trait: '& Communication Specialist', icon: '🗣️', color: 'from-stellar-purple to-quantum-cyan' },
     { name: 'Tariq', role: 'Archaeology, History', trait: '& Cosmic Mythology Expert', icon: '🏺', color: 'from-nebula-blue to-quantum-cyan' },
     { name: 'Oríkì', role: 'X AI – Holographic', trait: 'AI Guide', icon: '✨', color: 'from-quantum-cyan to-nebula-blue', isAI: true },
->>>>>>> parent of a87e745 (updated characters)
   ];
 
   const episodes = [
@@ -85,24 +24,6 @@ export default function AfroSpacePage() {
       {/* Full Page Video Background - Fixed to viewport */}
       <AlternatingVideoBackground 
         videos={[
-<<<<<<< HEAD
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video4.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video5.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video6.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video8.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video9.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video10.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video11.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video12.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video13.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video14.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video15.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video16.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video_homepage.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/Futuristic_African_Child_Astronaut_Video.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/bg2.mp4",
-          "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/video3.mp4",
-=======
           '/video4.mp4',
           '/video5.mp4',
           '/video6.mp4',
@@ -120,7 +41,6 @@ export default function AfroSpacePage() {
           '/bg2.mp4',
           '/video3.mp4',
 
->>>>>>> parent of a87e745 (updated characters)
         ]}
         interval={5000}
       />
@@ -240,28 +160,8 @@ export default function AfroSpacePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {characters.slice(4).map((char, index) => (
                 <div key={index} className="text-center group">
-<<<<<<< HEAD
-                  <div
-                    className={`relative w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br ${char.color} shadow-lg shadow-quantum-cyan/30 transform group-hover:scale-110 transition-transform ${
-                      char.isAI
-                        ? "ring-2 ring-quantum-cyan ring-offset-2 ring-offset-transparent animate-pulse"
-                        : ""
-                    }`}
-                  >
-                    <Image
-                      src={char.image}
-                      alt={`${char.name} character portrait`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 112px, 144px"
-                    />
-                    {!char.isAI && (
-                      <div className="absolute inset-0 ring-2 ring-quantum-cyan/40 rounded-full pointer-events-none" />
-                    )}
-=======
                   <div className={`w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 rounded-full bg-gradient-to-br ${char.color} flex items-center justify-center text-5xl md:text-6xl transform group-hover:scale-110 transition-transform shadow-lg shadow-quantum-cyan/30 ${char.isAI ? 'ring-2 ring-quantum-cyan ring-offset-2 ring-offset-transparent' : ''}`}>
                     {char.icon}
->>>>>>> parent of a87e745 (updated characters)
                   </div>
                   <h3 className="text-lg md:text-xl font-bold text-protoverse-white mb-1">{char.name}</h3>
                   {char.isAI && (
