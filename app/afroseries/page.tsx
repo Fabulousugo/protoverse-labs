@@ -1,15 +1,64 @@
 import AlternatingVideoBackground from "@/components/AlternatingVideoBackground";
 
 export default function AfroSpacePage() {
-  const characters = [
-    { name: 'Lindiwe', role: 'Fearless Leader & Primary Pilot', trait: 'of the Ubuntu Skyrunner', icon: '👩‍🚀', color: 'from-nebula-blue to-quantum-cyan' },
-    { name: 'Ezenwa', role: 'Software Engineer', trait: '& AI Prodigy', icon: '👨‍💻', color: 'from-stellar-purple to-nebula-blue' },
-    { name: 'Ayo', role: 'Robotics & Mechanical', trait: 'Engineering Prodigy', icon: '🤖', color: 'from-quantum-cyan to-nebula-blue' },
-    { name: 'Zainab', role: 'Navigator', trait: '& Celestial Cartographer', icon: '🧭', color: 'from-nebula-blue to-stellar-purple' },
-    { name: 'Boma', role: 'Bio & Hydro', trait: 'Systems Specialist', icon: '🌿', color: 'from-quantum-cyan to-stellar-purple' },
-    { name: 'Zawadi', role: 'Linguist', trait: '& Communication Specialist', icon: '🗣️', color: 'from-stellar-purple to-quantum-cyan' },
-    { name: 'Tariq', role: 'Archaeology, History', trait: '& Cosmic Mythology Expert', icon: '🏺', color: 'from-nebula-blue to-quantum-cyan' },
-    { name: 'Oríkì', role: 'X AI – Holographic', trait: 'AI Guide', icon: '✨', color: 'from-quantum-cyan to-nebula-blue', isAI: true },
+  const characters: Character[] = [
+    {
+      name: "Lindiwe",
+      role: "Fearless Leader & Primary Pilot",
+      trait: "of the Ubuntu Skyrunner",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Lindiwe%20Suited.png",
+      color: "from-nebula-blue to-quantum-cyan",
+    },
+    {
+      name: "Ezenwa",
+      role: "Software Engineer",
+      trait: "& AI Prodigy",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Ezenwa%20Suited.png",
+      color: "from-stellar-purple to-nebula-blue",
+    },
+    {
+      name: "Ayo",
+      role: "Robotics & Mechanical",
+      trait: "Engineering Prodigy",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Ayo%20Suited.png",
+      color: "from-quantum-cyan to-nebula-blue",
+    },
+    {
+      name: "Zainab",
+      role: "Navigator",
+      trait: "& Celestial Cartographer",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Zainab.png",
+      color: "from-nebula-blue to-stellar-purple",
+    },
+    {
+      name: "Boma",
+      role: "Bio & Hydro",
+      trait: "Systems Specialist",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Boma%20Suited.png",
+      color: "from-quantum-cyan to-stellar-purple",
+    },
+    {
+      name: "Zawadi",
+      role: "Linguist",
+      trait: "& Communication Specialist",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Zawadi%20Suited.png",
+      color: "from-stellar-purple to-quantum-cyan",
+    },
+    {
+      name: "Tariq",
+      role: "Archaeology, History",
+      trait: "& Cosmic Mythology Expert",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Tariq%20Suited.png",
+      color: "from-nebula-blue to-quantum-cyan",
+    },
+    {
+      name: "Oríkì",
+      role: "X AI – Holographic",
+      trait: "AI Guide",
+      image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Oriki-X.png",
+      color: "from-quantum-cyan to-nebula-blue",
+      isAI: true,
+    },
   ];
 
   const episodes = [
@@ -69,7 +118,7 @@ export default function AfroSpacePage() {
 
           <div className="max-w-6xl mx-auto text-center relative z-10">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 text-glow-cyan">
-              Ubuntu Skyrunners
+              AfroSpace Adventurers
             </h1>
             <p className="text-2xl md:text-3xl text-quantum-cyan mb-8">
               Africa's First Space-AI Animated Series
