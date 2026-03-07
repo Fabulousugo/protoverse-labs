@@ -166,7 +166,7 @@ export default function AfroSpacePage() {
 
           <div className="relative z-10 mx-auto max-w-6xl text-center">
             <h1 className="mb-6 text-6xl font-bold text-glow-cyan md:text-8xl">
-              AfroSpace Adventurers
+              Ubuntu Skyrunners
             </h1>
 
             <p className="mb-8 text-2xl text-quantum-cyan md:text-3xl">

@@ -107,41 +107,64 @@ export default function HomePage() {
 
         {/* About Preview Section */}
         <section className="py-20 px-4 bg-black/30 backdrop-blur-sm">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-4xl font-bold text-protoverse-white mb-6">Who We Are</h2>
-                <p className="text-lg text-protoverse-white/90 mb-6 leading-relaxed">
-                  Protoverse Labs is Africa's premier destination for space science and artificial intelligence
-                  education. We're building the next generation of African innovators through immersive learning
-                  experiences, cutting-edge research, and community engagement.
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="p-4 glass-effect rounded-lg">
-                    <div className="text-3xl mb-2">🎯</div>
-                    <h3 className="font-bold text-protoverse-white mb-1">Mission</h3>
-                    <p className="text-sm text-protoverse-white/80">Democratize space & AI education across Africa</p>
-                  </div>
-                  <div className="p-4 glass-effect rounded-lg">
-                    <div className="text-3xl mb-2">🔭</div>
-                    <h3 className="font-bold text-protoverse-white mb-1">Vision</h3>
-                    <p className="text-sm text-protoverse-white/80">Lead Africa's space-tech innovation ecosystem</p>
-                  </div>
-                </div>
-                <a
-                  href="/about"
-                  className="inline-block mt-8 bg-nebula-blue text-protoverse-white px-6 py-3 rounded-lg hover:bg-quantum-cyan transition-colors"
-                >
-                  Learn More About Us
-                </a>
-              </div>
-              <div className="relative h-96 bg-gradient-to-br from-nebula-blue/40 to-stellar-purple/40 backdrop-blur-md rounded-2xl flex items-center justify-center border border-quantum-cyan/30">
-                <p className="text-protoverse-white text-6xl">🌌</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            
+            <div>
+              <h2 className="text-4xl font-bold text-protoverse-white mb-6">
+                Who We Are
+              </h2>
 
+              <p className="text-lg text-protoverse-white/90 mb-6 leading-relaxed">
+                Protoverse Labs is Africa's premier destination for space science and artificial intelligence
+                education. We're building the next generation of African innovators through immersive learning
+                experiences, cutting-edge research, and community engagement.
+              </p>
+
+              <div className="grid grid-cols-2 gap-4">
+                <div className="p-4 glass-effect rounded-lg">
+                  <div className="text-3xl mb-2">🎯</div>
+                  <h3 className="font-bold text-protoverse-white mb-1">Mission</h3>
+                  <p className="text-sm text-protoverse-white/80">
+                    Democratize space & AI education across Africa
+                  </p>
+                </div>
+
+                <div className="p-4 glass-effect rounded-lg">
+                  <div className="text-3xl mb-2">🔭</div>
+                  <h3 className="font-bold text-protoverse-white mb-1">Vision</h3>
+                  <p className="text-sm text-protoverse-white/80">
+                    Lead Africa's space-tech innovation ecosystem
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="/about"
+                className="inline-block mt-8 bg-nebula-blue text-protoverse-white px-6 py-3 rounded-lg hover:bg-quantum-cyan transition-colors"
+              >
+                Learn More About Us
+              </a>
+            </div>
+
+                    {/* Image Section */}
+                    <div className="relative h-96 rounded-2xl overflow-hidden border border-quantum-cyan/40">
+
+          <img
+            src="https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/who_we_are/who_we_are2.jpeg"
+            alt="Protoverse Labs"
+            className="w-full h-full object-cover"
+          />
+
+          {/* Color Cover */}
+          <div className="absolute inset-0 bg-gradient-to-br from-nebula-blue/70 via-black/50 to-stellar-purple/70">
+          </div>
+
+        </div>
+
+          </div>
+        </div>
+      </section>
         {/* Sky Academy Preview */}
         <section className="py-20 px-4 bg-black/40 backdrop-blur-sm relative overflow-hidden">
           {/* Background Pattern */}

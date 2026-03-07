@@ -26,7 +26,7 @@ export default function AboutPage() {
     },
     {
       name: "Sultan Kamal Abdulazeez",
-      role: "COO / Co-Founder",
+      role: "Co-Founder & COO",
       image: "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/team/Kamal.jpeg",
     },
     {
