@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import AlternatingVideoBackground from "@/components/AlternatingVideoBackground";
 
 interface Character {
@@ -17,6 +20,25 @@ interface Episode {
 }
 
 export default function AfroSpacePage() {
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+  const [videoTitle, setVideoTitle] = useState("");
+
+  const trailerVideo =
+    "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/USK%20Teaser.mp4";
+
+  const comingSoonVideo =
+    "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/video/Ubunutu_skyrunners.mp4";
+
+  const openVideo = (videoUrl: string, title: string) => {
+    setActiveVideo(videoUrl);
+    setVideoTitle(title);
+  };
+
+  const closeVideo = () => {
+    setActiveVideo(null);
+    setVideoTitle("");
+  };
+
   const characters: Character[] = [
     {
       name: "Lindiwe",
@@ -80,7 +102,6 @@ export default function AfroSpacePage() {
       image:
         "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Oriki-X.png",
       color: "from-quantum-cyan to-nebula-blue",
-      // isAI: true,
     },
   ];
 
@@ -180,10 +201,17 @@ export default function AfroSpacePage() {
             </p>
 
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <button className="rounded-lg bg-protoverse-white px-10 py-4 font-bold text-nebula-blue transition-transform hover:scale-105">
+              <button
+                onClick={() => openVideo(trailerVideo, "Watch Trailer")}
+                className="rounded-lg bg-protoverse-white px-10 py-4 font-bold text-nebula-blue transition-transform hover:scale-105"
+              >
                 Watch Trailer
               </button>
-              <button className="glass-effect rounded-lg border-2 border-protoverse-white px-10 py-4 font-bold transition-all hover:bg-protoverse-white hover:text-nebula-blue">
+
+              <button
+                onClick={() => openVideo(comingSoonVideo, "Coming 2025")}
+                className="glass-effect rounded-lg border-2 border-protoverse-white px-10 py-4 font-bold transition-all hover:bg-protoverse-white hover:text-nebula-blue"
+              >
                 Coming 2025
               </button>
             </div>
@@ -413,6 +441,33 @@ export default function AfroSpacePage() {
           </div>
         </section>
       </main>
+
+      {activeVideo && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4">
+          <div className="relative w-full max-w-5xl rounded-2xl bg-black p-4 shadow-2xl">
+            <button
+              onClick={closeVideo}
+              className="absolute right-3 top-3 z-10 rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-white hover:bg-white/20"
+            >
+              ✕
+            </button>
+
+            <h3 className="mb-4 text-center text-xl font-bold text-white">
+              {videoTitle}
+            </h3>
+
+            <video
+              key={activeVideo}
+              controls
+              autoPlay
+              className="max-h-[80vh] w-full rounded-xl"
+            >
+              <source src={activeVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      )}
     </>
   );
 }
