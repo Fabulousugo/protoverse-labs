@@ -96,8 +96,8 @@ export default function AfroSpacePage() {
       color: "from-nebula-blue to-quantum-cyan",
     },
     {
-      name: "Oríkì-X",
-      role: "AI – Holographic",
+      name: "Oríkì X",
+      role: "Holographic",
       trait: "AI Guide",
       image:
         "https://pub-7050e11adbf34059b8b42ee8ede79026.r2.dev/characters/Oriki-X.png",
