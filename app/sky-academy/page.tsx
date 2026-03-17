@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import AlternatingVideoBackground from '@/components/AlternatingVideoBackground';
+import { RegistrationCTA } from '@/components/forms';
 
 export default function SkyAcademyPage() {
   const [activeTab, setActiveTab] = useState('kids');
@@ -115,7 +116,7 @@ export default function SkyAcademyPage() {
               and innovation through hands-on programs designed to inspire and empower.
             </p>
             <a
-              href="/contact"
+              href="#registration-cta"
               className="inline-block bg-horizon-gradient text-protoverse-white font-bold py-4 px-10 rounded-lg hover:scale-105 transition-transform text-lg"
             >
               Enroll Now
@@ -256,19 +257,8 @@ export default function SkyAcademyPage() {
             <p className="text-xl mb-8 text-protoverse-white/90">
               Join Sky Academy today and unlock your potential in space science and AI!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="inline-block bg-protoverse-white text-nebula-blue font-bold py-4 px-10 rounded-lg hover:scale-105 transition-transform"
-              >
-                Register for Individual
-              </a>
-              <a
-                href="/contact"
-                className="inline-block glass-effect border-2 border-protoverse-white font-bold py-4 px-10 rounded-lg hover:bg-protoverse-white hover:text-nebula-blue transition-all"
-              >
-                Register for School
-              </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center" id ="registration-cta">
+              <RegistrationCTA />
             </div>
           </div>
         </section>
