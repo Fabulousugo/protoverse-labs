@@ -1,2 +1,3 @@
 export { default as RegistrationCTA } from './RegistrationModals';
-// add others here as you create them
+export { default as RequestBookingButton } from './RequestBookingButton';
+export { default as Fusionregistrationmodal } from './Fusionregistrationmodal';

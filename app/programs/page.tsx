@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import AlternatingVideoBackground from '@/components/AlternatingVideoBackground';
+import { Fusionregistrationmodal } from '@/components/forms';
+import { RequestBookingButton } from '@/components/forms';
 
 export default function ProgramsPage() {
   const [filter, setFilter] = useState('all');
@@ -130,12 +132,7 @@ export default function ProgramsPage() {
               ))}
             </div>
 
-            <a
-              href="/contact"
-              className="inline-block bg-protoverse-white text-nebula-blue font-bold py-4 px-10 rounded-lg hover:scale-105 transition-transform"
-            >
-              Register for FUSION 2026
-            </a>
+            <Fusionregistrationmodal />
           </div>
         </section>
 
@@ -217,12 +214,7 @@ export default function ProgramsPage() {
                 </div>
               ))}
             </div>
-            <a
-              href="/contact"
-              className="inline-block bg-horizon-gradient text-protoverse-white font-bold py-4 px-10 rounded-lg hover:scale-105 transition-transform"
-            >
-              Request Booking
-            </a>
+              <RequestBookingButton />
           </div>
         </section>
       </main>
