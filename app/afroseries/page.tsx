@@ -212,7 +212,7 @@ export default function AfroSpacePage() {
                 onClick={() => openVideo(comingSoonVideo, "Coming 2025")}
                 className="glass-effect rounded-lg border-2 border-protoverse-white px-10 py-4 font-bold transition-all hover:bg-protoverse-white hover:text-nebula-blue"
               >
-                Coming 2025
+                Coming 2026
               </button>
             </div>
           </div>

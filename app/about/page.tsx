@@ -61,7 +61,7 @@ export default function AboutPage() {
 
   const milestones: Milestone[] = [
     { year: "2021", event: "Child, Teen to Adult Academy" },
-    { year: "2023", event: "Launched Bootcamps with over 500+ students" },
+    { year: "2023", event: "Launched Bootcamps with 500+ students" },
     {
       year: "2025",
       event: "Morphed into Protoverse Labs with focus on Space Tech and AI",
