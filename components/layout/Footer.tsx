@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { FaFacebook, FaYoutube, FaTwitter, FaInstagram, FaTiktok, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaYoutube, FaTwitter, FaInstagram, FaTiktok, FaLinkedin, FaXing } from "react-icons/fa";
+
+import { FaX, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -7,7 +9,7 @@ export default function Footer() {
   const socials = [
   { name: "Facebook", href: "https://www.facebook.com/share/1CXDPef2Yz/?mibextid=wwXIfr", icon: FaFacebook },
   { name: "YouTube", href: "https://www.youtube.com/channel/UCHNYcRP8aFmE2wryREnKuJQ", icon: FaYoutube },
-  // { name: "Twitter", href: "https://twitter.com/protoverse", icon: FaTwitter },
+  { name: "Twitter", href: "https://x.com/protoverselabs?s=21", icon: FaXTwitter },
   // { name: "Instagram", href: "https://www.instagram.com/protoverse/", icon: FaInstagram },
   // { name: "TikTok", href: "https://www.tiktok.com/@protoverse", icon: FaTiktok },
   { name: "LinkedIn", href: "https://www.linkedin.com/company/protoverse-labs/?", icon: FaLinkedin },
